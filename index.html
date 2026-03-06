@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>commYield</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; background-color: #000000; color: #ffffff; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 2rem; }
+        .container { max-width: 800px; width: 100%; text-align: center; padding: 2rem 0; }
+        .tagline { font-size: 2.5rem; font-weight: normal; color: #D4A017; letter-spacing: 1px; margin-bottom: 1.5rem; font-style: italic; }
+        .subtitle { font-size: 1.2rem; color: #a0a0a0; max-width: 600px; margin: 0 auto 2rem; }
+        .waitlist { background-color: #0D7377; padding: 1.5rem; border-radius: 4px; margin: 2rem 0; display: inline-block; }
+        .waitlist h2 { font-size: 1.3rem; margin-bottom: 1rem; color: #ffffff; }
+        .email-form { display: flex; max-width: 400px; margin: 0 auto; }
+        .email-input { flex: 1; padding: 0.75rem 1rem; border: none; border-radius: 4px 0 0 4px; font-size: 1rem; background-color: rgba(255,255,255,0.1); color: #ffffff; }
+        .email-input::placeholder { color: #a0a0a0; }
+        .email-submit { background-color: #D4A017; color: #000000; border: none; padding: 0.75rem 1.5rem; border-radius: 0 4px 4px 0; font-weight: bold; cursor: pointer; font-size: 1rem; }
+        .social-links { margin: 2.5rem 0; }
+        .social-links h2 { font-size: 1.3rem; margin-bottom: 1.5rem; color: #D4A017; }
+        .social-grid { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+        .social-link { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background-color: #0D7377; color: #ffffff; text-decoration: none; font-weight: bold; font-size: 1.2rem; transition: all 0.3s ease; }
+        .social-link:hover { transform: translateY(-3px); background-color: #D4A017; color: #000000; }
+        footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; color: #a0a0a0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="tagline">Yield isn't found. It's extracted.</h1>
+            <p class="subtitle">A community pooling influence and capital to fund philanthropy on our own terms — no gatekeepers, no institutions calling the shots.</p>
+        </header>
+        <section class="waitlist">
+            <h2>Join the waitlist</h2>
+            <form class="email-form">
+                <input type="email" class="email-input" placeholder="your@email.com" required>
+                <button type="submit" class="email-submit">Go</button>
+            </form>
+        </section>
+        <section class="social-links">
+            <h2>Follow @commyield</h2>
+            <div class="social-grid">
+                <a href="https://twitter.com/commyield" class="social-link" target="_blank">X</a>
+                <a href="https://instagram.com/commyield" class="social-link" target="_blank">IG</a>
+                <a href="https://tiktok.com/@commyield" class="social-link" target="_blank">TK</a>
+            </div>
+        </section>
+        <footer><p>commYield &copy; 2026</p></footer>
+    </div>
+</body>
+</html>
